@@ -39,7 +39,7 @@
       "project": "src/tsconfig.json"
     },
     {
-      "files": "../../framework/**/*.e2e-spec.ts",
+      "files": "e2e/**/*.ts",
       "project": "e2e/tsconfig.json"
     }
   ],

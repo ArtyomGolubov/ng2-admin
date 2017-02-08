@@ -24,11 +24,16 @@ before_install:
 
   - npm config set spin false
   - npm i -g npm@latest
+  - npm i -g angular-cli@latest
 
 install:
   - yarn
 
 script:
+  - cd test
+  - yarn
+  - ng serve
+  - yarn run e2e
 
 notifications:
   slack: akveo:q559HckfZMSyZRb803aiLcjH

@@ -1,12 +1,11 @@
 {
   "project": {
-    "version": "1.0.0-beta.28.3",
-    "name": "nga-test"
+    "name": "nga-srcs"
   },
   "apps": [
     {
-      "root": "src",
-      "outDir": "dist",
+      "root": "test/src",
+      "outDir": "test/dist",
       "assets": [
         "assets",
         "favicon.ico"
@@ -14,9 +13,9 @@
       "index": "index.html",
       "main": "main.ts",
       "polyfills": "polyfills.ts",
-      "test": "test.ts",
+      "test": "../../scripts/test.ts",
       "tsconfig": "tsconfig.json",
-      "prefix": "app",
+      "prefix": "",
       "styles": [
         "styles.scss"
       ],
@@ -33,16 +32,6 @@
       "config": "./protractor.conf.js"
     }
   },
-  "lint": [
-    {
-      "files": "src/**/*.ts",
-      "project": "src/tsconfig.json"
-    },
-    {
-      "files": "e2e/**/*.ts",
-      "project": "e2e/tsconfig.json"
-    }
-  ],
   "test": {
     "karma": {
       "config": "./karma.conf.js"
